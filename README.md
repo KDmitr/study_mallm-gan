@@ -1,8 +1,8 @@
 # study_mallm-gan
 The effectivness of the algorithm for generating MALLM-GAN data was investigated.\
 Original paper: Ling, Yaobin et al. “MALLM-GAN: Multi-Agent Large Language Model as Generative Adversarial Network for Synthesizing Tabular Data.” [ArXiv abs/2406.10521 (2024): n. pag.](https://arxiv.org/pdf/2406.10521)\
-\
-**Repeating the experiments described in the article**
+
+### **Repeating the experiments described in the article**
 <table class="tg"><thead>
   <tr>
     <th class="tg-c3ow"><span style="font-weight:bold">N</span></th>
@@ -57,7 +57,7 @@ Original paper: Ling, Yaobin et al. “MALLM-GAN: Multi-Agent Large Language Mod
   </tr>
 </tbody></table>
 
-**GPT vs LLaMA (Comparison of two LLM)**\
+### **GPT vs LLaMA (Comparison of two LLM)**
 Comparison of two LLM:
 * GPT: GPT-3.5-turbo (generator), GPT-4 (optimizer)
 * LLaMA: LLaMa 3.1-70b (generator and optimizer)
