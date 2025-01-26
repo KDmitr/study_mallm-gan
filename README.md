@@ -57,4 +57,9 @@ Original paper: Ling, Yaobin et al. “MALLM-GAN: Multi-Agent Large Language Mod
   </tr>
 </tbody></table>
 
-**GPT vs LLaMA (Comparison of two LLM)**
+**GPT vs LLaMA (Comparison of two LLM)**\
+Comparison of two LLM:
+* GPT: GPT-3.5-turbo (generator), GPT-4 (optimizer)
+* LLaMA: LLaMa 3.1-70b (generator and optimizer)
+
+<img src="https://github.com/KDmitr/study_mallm-gan/blob/main/figure/ki_2.png" alt="{{ include.description }}" width="400"/>  <img src="https://github.com/KDmitr/study_mallm-gan/blob/main/figure/mi_2.png" width="400"/> 
