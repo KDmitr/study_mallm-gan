@@ -1,6 +1,6 @@
 # study_mallm-gan
 The effectivness of the algorithm for generating MALLM-GAN data was investigated.\
-Original paper: Ling, Yaobin et al. “MALLM-GAN: Multi-Agent Large Language Model as Generative Adversarial Network for Synthesizing Tabular Data.” [ArXiv abs/2406.10521 (2024): n. pag.](https://arxiv.org/pdf/2406.10521)\
+Original paper: Ling, Yaobin et al. “MALLM-GAN: Multi-Agent Large Language Model as Generative Adversarial Network for Synthesizing Tabular Data.” [ArXiv abs/2406.10521 (2024): n. pag.](https://arxiv.org/pdf/2406.10521)
 
 ### **Repeating the experiments described in the article**
 <table class="tg"><thead>
@@ -59,7 +59,17 @@ Original paper: Ling, Yaobin et al. “MALLM-GAN: Multi-Agent Large Language Mod
 
 ### **GPT vs LLaMA (Comparison of two LLM)**
 Comparison of two LLM:
-* GPT: GPT-3.5-turbo (generator), GPT-4 (optimizer)
-* LLaMA: LLaMa 3.1-70b (generator and optimizer)
+* GPT: *GPT-3.5-turbo* (generator), *GPT-4* (optimizer)
+* LLaMA: *LLaMa 3.1-70b-instruct* (generator and optimizer)
 
 <img src="https://github.com/KDmitr/study_mallm-gan/blob/main/figure/ki_2.png" alt="{{ include.description }}" width="400"/>  <img src="https://github.com/KDmitr/study_mallm-gan/blob/main/figure/mi_2.png" width="400"/> 
+### Experiments under different conditions
+Comparison with the number of columns: 10, 5, 2; categorical/numerical features; traditional/few-shot generation.\
+LLM: *LLaMa 3.1-70b-instruct*
+
+Conclusions from the experiments:
+* The fewer columns, the better the quality
+* Few-shot generation typically produces inferior outcomes compared to the traditional method
+* The model performs better with numerical features than with categorical features
+
+<img src="https://github.com/KDmitr/study_mallm-gan/blob/main/figure/ki_3.png" alt="{{ include.description }}" width="400"/>  <img src="https://github.com/KDmitr/study_mallm-gan/blob/main/figure/mi_3.png" width="400"/>
