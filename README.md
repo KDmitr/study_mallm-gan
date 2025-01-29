@@ -73,3 +73,108 @@ Conclusions from the experiments:
 * The model performs better with numerical features than with categorical features
 
 <img src="https://github.com/KDmitr/study_mallm-gan/blob/main/figure/ki_3.png" alt="{{ include.description }}" width="400"/>  <img src="https://github.com/KDmitr/study_mallm-gan/blob/main/figure/mi_3.png" width="400"/>
+### Cost-effectiveness
+
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-0lax"></th>
+    <th class="tg-0lax"><span style="font-weight:bold">Metric</span></th>
+    <th class="tg-1wig">Beijing</th>
+    <th class="tg-1wig">California</th>
+    <th class="tg-1wig">Boston</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax" rowspan="5">2<br><br></td>
+    <td class="tg-0lax">Xgboost (F1)</td>
+    <td class="tg-0lax">0,77</td>
+    <td class="tg-0lax">-0,12</td>
+    <td class="tg-0lax"><b>0,30</b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Linear regression (F1)</td>
+    <td class="tg-0lax"><b>0,65<b></td>
+    <td class="tg-0lax">0,01</td>
+    <td class="tg-0lax"><b>0,34<b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Decision tree (F1)</td>
+    <td class="tg-0lax"><b>0,85<b></td>
+    <td class="tg-0lax">-0,13</td>
+    <td class="tg-0lax"><b>0,47<b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Wasserstein distance</td>
+    <td class="tg-0lax">0,01</td>
+    <td class="tg-0lax"><b>0,00<b></td>
+    <td class="tg-0lax"><b>0,00<b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Maximum mean discrepancy</td>
+    <td class="tg-0lax">0,06</td>
+    <td class="tg-0lax"><b>0,01<b></td>
+    <td class="tg-0lax"><b>0,00<b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" rowspan="5">25<br><br></td>
+    <td class="tg-0lax">Xgboost (F1)</td>
+    <td class="tg-0lax"><b>0,81&uarr;<b></td>
+    <td class="tg-0lax"><b>0,31&uarr;<b></td>
+    <td class="tg-0lax">-0,19&darr;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Linear regression (F1)</td>
+    <td class="tg-0lax">0,54&darr;</td>
+    <td class="tg-0lax"><b>0,33&uarr;</span></td>
+    <td class="tg-0lax">0,14&darr;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Decision tree (F1)</td>
+    <td class="tg-0lax">0,82</td>
+    <td class="tg-0lax">0,33&uarr;</td>
+    <td class="tg-0lax">0,29&darr;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Wasserstein distance</td>
+    <td class="tg-0lax"><b>0,00&darr;<b></td>
+    <td class="tg-0lax">0,01&uarr;</td>
+    <td class="tg-0lax">0,01</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Maximum mean discrepancy</td>
+    <td class="tg-0lax"><b>0,01&darr;<b></td>
+    <td class="tg-0lax">0,02&uarr;</td>
+    <td class="tg-0lax">0,01</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" rowspan="5">50<br><br></td>
+    <td class="tg-0lax">Xgboost (F1)</td>
+    <td class="tg-0lax">0,74&darr;</td>
+    <td class="tg-0lax">0,11&darr;</td>
+    <td class="tg-0lax">-0,21&darr;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Linear regression (F1)</td>
+    <td class="tg-0lax">0,47&darr;</td>
+    <td class="tg-0lax">0,01&darr;</td>
+    <td class="tg-0lax">-1,92&darr;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Decision tree (F1)</td>
+    <td class="tg-0lax">0,74&darr;</td>
+    <td class="tg-0lax">0,17&darr;</td>
+    <td class="tg-0lax">0,19&darr;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Wasserstein distance</td>
+    <td class="tg-0lax"><b>0,00<b></td>
+    <td class="tg-0lax">0,10&uarr;</td>
+    <td class="tg-0lax">0,02&uarr;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Maximum mean discrepancy</td>
+    <td class="tg-0lax"><b>0,01<b></td>
+    <td class="tg-0lax">0,06&uarr;</td>
+    <td class="tg-0lax">0,02&uarr;</td>
+  </tr>
+</tbody></table>
