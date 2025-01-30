@@ -74,7 +74,12 @@ Conclusions from the experiments:
 
 <img src="https://github.com/KDmitr/study_mallm-gan/blob/main/figure/ki_3.png" alt="{{ include.description }}" width="400"/>  <img src="https://github.com/KDmitr/study_mallm-gan/blob/main/figure/mi_3.png" width="400"/>
 ### Cost-effectiveness
-
+Comparison with different number of examples in prompt: 2, 25, 50\
+LLM: *LLaMa 3.1-70b-instruct*\
+Conclusions from the experiments:
+* There is no explicit dependence on the number of examples per batch
+* In experiments where 50 examples were submitted at once, the model returned an error several times: LLM failed to generate 50 examples
+* The optimum is 25 examples: 3612 tokens instead of 22170 (2 examples)
 <table class="tg"><thead>
   <tr>
     <th class="tg-0lax"></th>
