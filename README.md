@@ -3,6 +3,10 @@ The effectivness of the algorithm for generating MALLM-GAN data was investigated
 Original paper: Ling, Yaobin et al. “MALLM-GAN: Multi-Agent Large Language Model as Generative Adversarial Network for Synthesizing Tabular Data.” [ArXiv abs/2406.10521 (2024): n. pag.](https://arxiv.org/pdf/2406.10521)
 
 ### **Repeating the experiments described in the article**
+The Adult data is used for a classification task, Insurance - regression. For classification, we fit XGBoost Classifier, calculate F1 score; regression - XGBoost Regressor and calculate R2.
+Conclusions from the experiments:
+* The results obtained in the article were partially reproduced
+* The thesis stated in the article that the model performs better on small sample sizes was confirmed
 <table class="tg"><thead>
   <tr>
     <th class="tg-c3ow"><span style="font-weight:bold">N</span></th>
@@ -61,6 +65,8 @@ Original paper: Ling, Yaobin et al. “MALLM-GAN: Multi-Agent Large Language Mod
 Comparison of two LLM:
 * GPT: *GPT-3.5-turbo* (generator), *GPT-4* (optimizer)
 * LLaMA: *LLaMa 3.1-70b-instruct* (generator and optimizer)
+
+Conclusion from the experiments: the quality of the models is comparable
 
 <img src="https://github.com/KDmitr/study_mallm-gan/blob/main/figure/ki_2.png" alt="{{ include.description }}" width="400"/>  <img src="https://github.com/KDmitr/study_mallm-gan/blob/main/figure/mi_2.png" width="400"/> 
 ### Experiments under different conditions
